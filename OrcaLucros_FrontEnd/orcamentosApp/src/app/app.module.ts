@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 

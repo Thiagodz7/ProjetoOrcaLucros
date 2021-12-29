@@ -1,5 +1,11 @@
 <h2>Orçamentos</h2>
 
-<div *ngFor="let orcamento of orcamentos">
-  {{orcamento}}
+<div *ngFor="let orcamento of serviceOrcamentos.list">
+  <div>{{orcamento.id}}</div>
+  <div>{{orcamento.saldoInicial}}</div>
+  <div>{{orcamento.entrada}}</div>
+  <div>{{orcamento.dtEntrada}}</div>
+  <div>{{orcamento.saida}}</div>
+  <div>{{orcamento.dtSaida}}</div>
+  <div>{{orcamento.valorFinal}}</div>
 </div>

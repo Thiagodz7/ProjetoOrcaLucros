@@ -7,13 +7,13 @@ namespace OrcaLucros.Models
 {
     public class Orcamentos : IDomainEntity
     {
-        public Guid Id { get; private set; }
-        public float SaldoInicial  { get; private set; }
-        public float Entrada { get; private set; }
-        public DateTime Dt_Entrada{ get; private set; }
-        public float Saida { get; private set; }
-        public DateTime Dt_Saida{ get; private set; }
-        public float ValorFinal { get; private set; }
+        public Guid Id { get; set; }
+        public string SaldoInicial  { get; set; }
+        public string Entrada { get; set; }
+        public DateTime DtEntrada{ get; set; }
+        public string Saida { get; set; }
+        public DateTime DtSaida{ get; set; }
+        public string ValorFinal { get; set; }
 
         public Orcamentos() { }
     }

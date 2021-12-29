@@ -23,29 +23,40 @@ namespace OrcaLucros.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("Id");
 
-                    b.Property<DateTime>("Dt_Entrada")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime>("DtEntrada")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DtEntrada");
 
-                    b.Property<DateTime>("Dt_Saida")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime>("DtSaida")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("DtSaida");
 
-                    b.Property<float>("Entrada")
-                        .HasColumnType("real");
+                    b.Property<string>("Entrada")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Entrada");
 
-                    b.Property<float>("Saida")
-                        .HasColumnType("real");
+                    b.Property<string>("Saida")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Saida");
 
-                    b.Property<float>("SaldoInicial")
-                        .HasColumnType("real");
+                    b.Property<string>("SaldoInicial")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("SaldoInicial");
 
-                    b.Property<float>("ValorFinal")
-                        .HasColumnType("real");
+                    b.Property<string>("ValorFinal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("ValorFinal");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orcamentos");
+                    b.ToTable("Orcamentos", "dbo");
                 });
 #pragma warning restore 612, 618
         }

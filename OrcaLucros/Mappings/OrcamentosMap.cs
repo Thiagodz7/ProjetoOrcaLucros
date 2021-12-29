@@ -20,13 +20,13 @@ namespace OrcaLucros.Mappings
             builder.Property(x => x.Entrada)
                 .HasColumnName("Entrada")
                 .IsRequired();
-            builder.Property(x => x.Dt_Entrada)
+            builder.Property(x => x.DtEntrada)
                 .HasColumnName("DtEntrada")
                 .IsRequired();
             builder.Property(x => x.Saida)
                 .HasColumnName("Saida")
                 .IsRequired();
-            builder.Property(x => x.Dt_Saida)
+            builder.Property(x => x.DtSaida)
                 .HasColumnName("DtSaida")
                 .IsRequired();
             builder.Property(x => x.ValorFinal)

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OrcamentosService {
 
-  readonly baseURL = 'https://localhost:44331/api/Orcamentos';
+  readonly baseURL = 'https://localhost:5001/api/Orcamentos';
   list : Orcamentos[] | undefined
   formData : Orcamentos = new Orcamentos();
 

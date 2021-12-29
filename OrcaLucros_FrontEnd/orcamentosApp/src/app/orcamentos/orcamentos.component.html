@@ -1,11 +1,52 @@
-<h2>Orçamentos</h2>
+<div class="container">
+  <h2>Orçamentos</h2>
+  <div class="row" style="background-color: aqua; align-items: center;">
+    <div class="col">
+      <h4>ID</h4>
+    </div>
+    <div class="col">
+      <h4>SALDO INICIAL</h4>
+    </div>
+    <div class="col">
+      <h4>ENTRADAS</h4>
+    </div>
+    <div class="col">
+      <h4>DATA DE ENTRADA</h4>
+    </div>
+    <div class="col">
+      <h4>SAÍDAS</h4>
+    </div>
+    <div class="col">
+      <h4>DATA SAÍDA</h4>
+    </div>
+    <div class="col">
+      <h4>VALOR FINAL</h4>
+    </div>
+  </div>
 
-<div *ngFor="let orcamento of serviceOrcamentos.list">
-  <div>{{orcamento.id}}</div>
-  <div>{{orcamento.saldoInicial}}</div>
-  <div>{{orcamento.entrada}}</div>
-  <div>{{orcamento.dtEntrada}}</div>
-  <div>{{orcamento.saida}}</div>
-  <div>{{orcamento.dtSaida}}</div>
-  <div>{{orcamento.valorFinal}}</div>
+  <div *ngFor="let orcamento of serviceOrcamentos.list">
+    <div style="background-color: azure; border-color: aqua; border-style: solid;" class="row">
+      <div class="col">
+        <div>{{orcamento.id}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.saldoInicial}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.entrada}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.dtEntrada}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.saida}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.dtSaida}}</div>
+      </div>
+      <div class="col">
+        <div>{{orcamento.valorFinal}}</div>
+      </div>
+    </div>
+  </div>
 </div>

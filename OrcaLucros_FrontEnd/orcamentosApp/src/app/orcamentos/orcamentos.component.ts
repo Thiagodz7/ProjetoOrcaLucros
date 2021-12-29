@@ -15,8 +15,4 @@ export class OrcamentosComponent implements OnInit {
   ngOnInit(): void {
     this.serviceOrcamentos.refreshList();
   }
-
-
-  orcamentos : Array<string> = ['Id','SaldoInicial','Entrada','Saida','DtEntrada','DtSaida','ValorFinal']
-  
 }

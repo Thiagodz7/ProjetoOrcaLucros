@@ -30,6 +30,7 @@ namespace OrcaLucros
         {
             services.AddDbContext<orcamentoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("conexaoDB")));
             services.AddControllers();
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OrcaLucros", Version = "v1" });
